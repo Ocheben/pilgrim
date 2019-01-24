@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<!--
+	Indivisible by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>PILGRIM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/pikaday.css"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="is-loading-0 is-loading-1">
+		<!-- Wrapper -->
+			<div id="wrapper" class="imge">
+
+				<!-- Home -->
+					<article id="home" class="panel special"  style="overflow:hidden;">
+						<div class="content" style="background: url('images/'); color:#ffffff">
+							<div class="inner">
+								<header>
+									<h1 style="color:#daa520; background: rgba(0, 0, 0, 0.6); padding-top:15px"><center><img src="images/leaf2.png" style="display:block"></center><span>PILGRIM</span></h1>
+									<p>travel in comfort all<br />
+									</p>
+								</header>
+								<nav id="nav">
+									<ul class="actions vertical special spinY">
+										<li><a href="#book" class="button" style="color:" onclick="bookback()"><span style="color:#ffffff">BOOK TICKET</span></a></li>
+                                        <li><a href="#work" class="button" style="color:" onclick="workback()"><span style="color:#ffffff">What we do</span></a></li>
+										<li><a href="#contact" class="button" onclick="contactback()"><span style="color:#ffffff" >Contact</span></a></li>
+										<!--<li><a href="#elements" class="button">Elements</a></li>-->
+									</ul>
+								</nav>
+								<ul class="icons">
+									<li><a href="http://www.twitter.com/pilgrim_global" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</article>
+                
+                 <!-- Book -->
+					<article id="book" class="panel secondary">
+						<div class="image">
+							<img src="images/book.jpeg" alt="" data-position="bottom center" />
+						</div>
+						<div class="content" style="background: rgba(144, 144, 144, 0.6)">
+							<ul class="actions spinX">
+								<li><a href="#home" class="button small back" onclick="homeback()"><span style="color:#ffffff">Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>Book Ticket</h2>
+								</header>
+								<form method="post" action="regist32.php" >
+									<div class="field half first">
+                                        <label>Leaving from</label>
+                                     <select id="university"  class="form-control" name="university" style="color:ffffff">
+                                <option value="NULL"></option>
+                                <option value="Afe Babalola University">Afe Babalola University</option>
+                                <option value="babcock">Babcock University</option>
+                                <option value="bowen">Bowen University  </option>
+                                <option value="covenant">Covenant Univerity</option>
+                            </select>   
+									</div>
+									<div class="field half">
+										<label>Going to</label>
+                                        <select  class="form-control" name="destination" id="destination">
+                                <option value="null"></option>
+                                 <option value="Lagos">Lagos </option>
+                                <option value="Abuja">Abuja - Utako</option>
+                                <option value="Port Harcourt">Port Harcourt</option>
+                                <option value="Akwa Ibom">Akwa Ibom </option>
+                                <option value="Calabar">Calabar</option>
+                                <option value="Ibadan">Ibadan</option>
+                                <option value="Ilorin">Ilorin</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Jos">Jos</option>
+                            </select>
+									</div>
+									<div class="field half first" style="padding-left:0px">
+                                        <label>Date</label>
+										   <select  class="form-control" name="date" id="date">
+                                <option value="NULL"></option>
+                                <option value="Saturday">Monday, 28th August</option>
+                                <option value="Sunday">Tuesday, 29th August</option>
+                            </select>
+									</div>
+                                    
+                                    
+                                    <div class="field half first">
+                                    <ul class="actions">
+										<li><a href="#book2"  class="button submit" id="book" onclick="getUserName()"><span style="color:#daa520">Book Ticket</span></a></li>
+									</ul>
+                                    </div>
+									
+								</form>
+                                
+							</div>
+						</div>
+					</article>
+
+                
+                <!-- Book 2 -->
+					<article id="book2" class="panel secondary">
+						<div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff">
+							<ul class="actions spinX">
+								<li><a href="#book" class="button small back" ><span style="color:#ffffff" >Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>CLASSIC</h2>
+									<p>Luxurious Bus<br/>
+									Drop off at bus park <br/>Complimentary meal<br/>Luggage Allowance: 25kg<br/>Extra Luggage at &#8358;100/kg  </p>
+                                    <p>PRICE: &#8358;<span id="price1"></span></p>
+								</header>
+                                
+                                <ul class="actions vertical special spinY">
+                                    <li><a href="#book3" class="button" style="color:" id="classic"
+                                           onclick="select1()"><span style="color:#daa520">SELECT</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+                        
+                        <div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff; padding-top:85px">
+							<div class="inner">
+								<header>
+									<h2>LUXURY</h2>
+									<p>Luxurious Bus<br/>
+									Drop off at door step <br/>Complimentary meal<br/>Luggage Allowance: 25kg<br/>Extra Luggage at &#8358;100/kg</p>
+                                    <p>PRICE: &#8358;<span id="price2"></span></p>
+								</header>
+                                
+                                <ul class="actions vertical special spinY">
+										<li><a href="#book3" id="luxury" class="button" style="color:" onclick="select2()"><span style="color:#daa520">SELECT</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+                        
+                        <div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff; padding-top:85px">
+							<div class="inner">
+								<header>
+									<h2>CHARTER</h2>
+									<p>Chauffeured Vehicle<br/>
+									Drop off at door step <br/>Complimentary meal</p>
+                                    <p>PRICE: From &#8358;55000</p>
+								</header>
+                                <ul class="actions vertical special spinY">
+                                    <li><a href="#book4" id="charter" class="button" style="color:"><span style="color:#daa520">SELECT</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+
+					</article>
+                
+                
+                <!-- Book 4 -->
+					<article id="book4" class="panel secondary">
+						<div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff">
+							<ul class="actions spinX">
+								<li><a href="#book2" class="button small back" ><span style="color:#ffffff" >Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>TOYOTA SIENNA</h2>
+									<p>6 Seats<br/>
+									Fully Air Conditioned <br/>Complimentary meal</p>
+                                    <p>PRICE: &#8358;<span id="price3"></span></p>
+								</header>
+                                
+                                <ul class="actions vertical special spinY">
+                                    <li><a href="#book3" class="button" style="color:" id="classic"
+                                           onclick="select3()"><span style="color:#daa520">SELECT</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+                        
+                        <div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff; padding-top:85px">
+							<div class="inner">
+								<header>
+									<h2>TOYOTA HIACE</h2>
+									<p>14 Seats <br/>Fully Air Conditioned <br/>Complimentary meal</p>
+                                    <p>PRICE: &#8358;<span id="price4"></span></p>
+								</header>
+                                
+                                <ul class="actions vertical special spinY">
+										<li><a href="#book3" id="luxury" class="button" style="color:" onclick="select4()"><span style="color:#daa520">SELECT</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+					</article>
+                
+                <!-- Book 3 -->
+					<article id="book3" class="panel secondary">
+						<div class="image">
+							<img src="images/enter.jpeg" alt="" data-position="bottom center" />
+						</div>
+						<div class="content" style="background: rgba(144, 144, 144, 0.6)">
+							<ul class="actions spinX">
+								<li><a href="#book2" class="button small back"><span style="color:#ffffff">Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>Almost there</h2>
+								</header>
+								<form  id="confirmForm" method="post" action="" onsubmit="payWithPaystack()">
+									<div class="field first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half first">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+                                    <div class="field half">
+										<label>Phone</label>
+										<input type="tel" name="phone" id="phone" />
+                                        
+									</div>
+                                    
+                                    <!-- hidden inputs -->
+                                    <input type="hidden" id="university2" name="university2" />
+                                    <input type="hidden" id="destination2" name="destination2" value=""/>
+                                    <input type="hidden" id="date2" name="date2" value=""/>
+                                    <input type="hidden" id="class" name="class" value=""/>
+                                    
+									<ul class="actions" >
+										<li><input type="button" class="form-control" onclick="payWithPaystack()" value="PAY"></li>
+									</ul>
+                                    
+                     <script src="js/jquery.js"></script>
+ <script src="https://js.paystack.co/v1/inline.js"></script>
+                                    
+<script>
+  function payWithPaystack(){
+    var mail = document.getElementById('email').value;  
+    var classs = document.getElementById('class').value;
+    if (classs == "Classic") {  
+    var price = document.getElementById('price1').textContent;
+    }
+    else if (classs == "Luxury") {  
+    var price = document.getElementById('price2').textContent;
+    }
+    else if (classs == "Sienna") {  
+    var price = document.getElementById('price3').textContent;
+    }
+    else if (classs == "Hiace") {  
+    var price = document.getElementById('price4').textContent;
+    }
+    var handler = PaystackPop.setup({
+      key: 'pk_live_cc983f0f7112a377a8c5aa18489d5f36407e8ea1',
+      email: mail,
+      amount: price*100,
+      callback: function(response){
+          $('#confirmForm').attr('action', 'regist.php?trxref=' + response.trxref);
+          $('#confirmForm').submit();
+      }
+    });
+    handler.openIframe();
+  }
+</script>
+								</form>
+							</div>
+						</div>
+					</article>
+
+
+				<!-- Work -->
+					<article id="work" class="panel secondary">
+						<div class="image">
+							<img src="images/maps.jpeg" alt="" data-position="center center" />
+						</div>
+						<div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff">
+							<ul class="actions spinX">
+								<li><a href="#home" class="button small back" onclick="homeback()"><span style="color:#ffffff">Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>go anywhere with <span style="color:#daa520">PILGRIM</span></h2>
+									<p>We provide transportation and logistics services<br/> for private universities in Nigeria, finding the most convenient and luxurious way for you to get there.</p>
+								</header>
+							<nav id="nav">
+									<ul class="actions horizontal special spinY">
+										<li><a href="#work2" class="button" style="color:"><span style="color:#ffffff">HOW IT WORKS</span></a></li>
+                                        <li><a href="#options" class="button" style="color:"><span style="color:#ffffff">travel options</span></a></li>
+                                        <li><a href="#about" class="button"  onclick="aboutback()"><span style="color:#ffffff" >About us</span></a></li>
+										<!--<li><a href="#elements" class="button">Elements</a></li>-->
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</article>
+                
+                
+				<!-- how it works -->
+					<article id="work2" class="panel secondary">
+						<div class="image">
+							<img src="images/maps.jpeg" alt="" data-position="center center" />
+						</div>
+						<div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff">
+							<ul class="actions spinX" style="color:#ffffff">
+								<li><a href="#work" class="button small back"><span style="color:#ffffff">Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>go anywhere with <span style="color:#daa520">PILGRIM</span></h2>
+									<p>It's quite easy, just click on <a href="#book" style="color:#daa520">BOOK TICKET</a> and fill the ticket form, pay with your debit card (mastercard, visa or verve), you'll get an email with your boarding details and also a reciept. Please present this to the bus operators for confirmation on the date and time of your journey. That simple!</p>
+								</header>
+							<nav id="nav">
+									<ul class="actions horizontal special spinY">
+										<li><a href="#book" class="button" style="color:"><span style="color:#daa520">BOOK Ticket</span></a></li>
+										<!--<li><a href="#elements" class="button">Elements</a></li>-->
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</article>
+                
+                <!-- Options -->
+					<article id="options" class="panel secondary" >
+                        
+					<div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff">
+							<ul class="actions spinX">
+								<li><a href="#work" class="button small back"><span style="color:#ffffff">Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>CLASSIC</h2>
+									<p>Luxurious Bus<br/>
+									Drop off at bus park <br/>Complimentary meal<br/>from &#8358;6000  </p>
+								</header>
+                                
+                                <ul class="actions vertical special spinY">
+                                    <li><a href="#book" class="button" style="color:"><span style="color:#daa520">BOOK TICKET</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+                        
+                        <div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff; padding-top:85px">
+							<div class="inner">
+								<header>
+									<h2>LUXURY</h2>
+									<p>Luxurious Bus<br/>
+									Drop off at door step <br/>Complimentary meal<br/>from &#8358;8000  </p>
+								</header>
+                                
+                                <ul class="actions vertical special spinY">
+										<li><a href="#book" class="button" style="color:"><span style="color:#daa520">BOOK TICKET</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+                        
+                        <div class="content" style="background: rgba(144, 144, 144, 0.4); color:#ffffff; padding-top:85px">
+							<div class="inner">
+								<header>
+									<h2>CHARTER</h2>
+									<p>Chauffeured Bus<br/>
+									Drop off at door step <br/>Complimentary meal<br/>from &#8358;100000 </p>
+								</header>
+                                <ul class="actions vertical special spinY">
+                                    <li><a href="#book" class="button" style="color:"><span style="color:#daa520">BOOK TICKET</span></a></li>
+                                </ul>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+					</article>
+
+				<!-- About -->
+					<article id="about" class="panel secondary">
+						<div class="image">
+							<img src="images/about.jpeg" alt="" data-position="center center" />
+						</div>
+						<div class="content" style="background: rgba(144, 144, 144, 0.6); color:#ffffff">
+							<ul class="actions spinX">
+								<li><a href="#work" class="button small back" onclick="workback()"><span style="color:#ffffff">Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>About</h2>
+									<p>Redefining the traveling experience with the relentless pursuit of perfection at the core, Pilgrim is driven by an unyielding passion for excellence. The kind of excellence that results from the unique tension between uncompromising luxury and outstanding performance.
+Pilgrim began with a straightforward philosophy: to devote its talent and unparalleled obsession to creating superior products and services that contribute to a better global society.
+For us, the Gold flame isn't just a badge, it's our fire, our unbridled zeal. It represents everything we stand for. But more importantly, it also represents our promise to fuse innovation and tradition to create an otherworldly experience</p>
+								</header>
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+					</article>
+
+				<!-- Contact -->
+					<article id="contact" class="panel secondary">
+						<div class="image">
+							<img src="images/contact.jpeg" alt="" data-position="bottom center" />
+						</div>
+						<div class="content" style="background: rgba(144, 144, 144, 0.6)">
+							<ul class="actions spinX">
+								<li><a href="#home" class="button small back" onclick="homeback()"><span style="color:#000000" >Back</span></a></li>
+							</ul>
+							<div class="inner">
+								<header>
+									<h2>Contact</h2>
+								</header>
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="myField"/>
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="5"></textarea>
+									</div>
+									<ul class="actions">
+										<li><a href="" class="button submit">Send Message</a></li>
+									</ul>
+								</form>
+
+							</div>
+						</div>
+					</article>
+
+				
+				<!-- Footer -->
+
+			</div>
+
+		<!-- Scripts -->
+        
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+        <script src="assets/js/pikaday.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/index.js"></script>
+        
+
+	</body>
+</html>
